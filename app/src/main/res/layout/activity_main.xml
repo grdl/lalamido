@@ -10,7 +10,6 @@
         android:id="@+id/scaleName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="A"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="120sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,10 +23,18 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="553dp"
         android:onClick="randomize"
-        android:text="Random"
-        android:textSize="24sp"
+        android:text="Shuffle"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
