@@ -3,14 +3,14 @@ package dev.grdl.lalamido
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.view.WindowManager
 import android.widget.TextView
-
-
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
     }
 
     var minorScalesAll =  listOf("a", "e", "b", "f#", "c#", "g#", "d#", "d", "g", "c", "f", "bb")
