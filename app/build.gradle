@@ -10,7 +10,7 @@ android {
         applicationId "dev.grdl.lalamido"
         minSdk 21
         targetSdk 31
-        versionCode 1
+        versionCode 3
         versionName "1.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
