@@ -39,4 +39,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <RadioGroup
+        android:id="@+id/scalesSelector"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:checkedButton="@id/radioScaleMajor"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioScaleMajor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="reset"
+            android:text="Major" />
+
+        <RadioButton
+            android:id="@+id/radioScaleMinor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="reset"
+            android:text="Minor" />
+
+        <RadioButton
+            android:id="@+id/radioScaleBoth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="reset"
+            android:text="Both" />
+    </RadioGroup>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
